@@ -1,0 +1,33 @@
+
+POST http://127.0.0.1:8000/blogs/add
+Content-Type: application/json
+
+{
+  "title": 2,
+  "description": "sadasda"
+}
+
+###
+
+# PATCH http://localhost:8000/blogs/edit/634fd88ed27f0ccdcc0d3f41
+# Content-Type: application/json
+
+# {
+#   "title": 2,
+#   "description": "Gatti"
+# }
+
+# ###
+
+# GET http://localhost:8000/blogs
+# Content-Type: application/json
+
+# ###
+
+# DELETE http://127.0.0.1:8000/blogs/delete/634fd88ed27f0ccdcc0d3f41
+# Content-Type: application/json
+
+# ###
+
+
+
