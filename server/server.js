@@ -18,9 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/blogs", BlogRoutes);
 
 mongoose
-  .connect(
-    "mongodb+srv://Jebolwski:85GiGJTTUU2vNJIR@blogcluster.ynsrg1x.mongodb.net/?retryWrites=true&w=majority"
-  )
+  .connect(process.env.CONNECTION_URI)
   .then(app.listen(8000))
   .then(console.log("server is running on port 8000"))
   .catch((error) => {
